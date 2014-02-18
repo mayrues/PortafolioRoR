@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>  	
+  	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  	
+	<%= javascript_include_tag 'jquery', 'application' %>
+
+  	<%= csrf_meta_tags %>
+
+	<title>Portafolio - Mayte</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Bienvenido a mi portafolio web en Html5, CSS3 y JQuery con Resposive Web design."/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">		
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="index.html">
+				<span>Mayte</span>
+			</a>
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="/">Inicio</a></li>				
+				<li><a href="#habilidades">Habilidades</a></li>
+				<li><a href="#sobre-mi">Sobre mi</a></li>
+				<!--<li><a href="trabajos.html">Trabajos</a></li>-->
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</nav>		
+	</header>		
+	<section id="cita">	
+		<div>	
+			<span>"Hay qente que sueña con grandes logros, otros no duermen para poder lograrlos."</span>
+		</div>
+		<div>
+			<span>Anónimo.</span>
+		</div>
+	</section>
+
+	<section id="contenido">
+        <section id="habilidades" class="parrafo">
+            <h2>Habilidades</h2>
+            <article>
+            	<h3>Desarrollo de Software<h3>            	
+            	<div>                	
+            		Poseo más de 10 años de experiencia en desarrollo de aplicaciones web y de escritorio. 
+				</div>
+				<div>
+					Architectura de base de datos, toma de requisitos, usabilidad, interfaz de usuario.
+				</div>
+			</article> 
+			<article>
+				<h3>Técnica<h3>            	
+            	<div>
+                	HTML5, CSS, JQUERY, RUBY AND RAILS, C#, VISUAL BASIC .NET, ASP.NET MVC, VISUAL BASIC 6.
+				</div>
+			</article>                        
+        </section>
+
+        <section id="sobre-mi" class="parrafo">
+           <h2>Sobre mi</h2>
+           <article>
+            	<h3>Recorrido</h3>            	
+            	<div>                	
+            		Terminé la carrera en el año 2003. Después empecé a trabajar de prácticas en una empresa particular, en la cual aprendí mucho sobre relaciones laborales, ya que era mi primer empleo y esto me sirvió mucho para mis posteriores trabajos. 
+				</div>
+				<div>
+					A continuación me mudé a Sevilla donde trabajé durante dos años en empresas como Endesa e Indra. Aprendí muchisimo en estos años sobre desarrollo de aplicaciones y bases de datos.
+				</div>
+				<div>
+					Posteriormente me volví a mudar, esta vez a Granada. Estuve trabajando durante 1 año en una empresa particular en la que estuve a cargo de un gran proyecto para una farmáceutica de Barcelona.
+				</div>
+				<div>
+					Y como la cabra siempre tira al monte, al cabo del año de estar en Granada, encontré un buen trabajo en Jaén donde me volvía a mudar, pero esta vez ya desfinitivamente.
+				</div>
+			</article> 
+        </section>
+
+        <section id="contacto" class="parrafo">
+            <h2>Contacto</h2>
+            <article>            	
+				<!--<form method="post">-->				
+				<%= render :template => "contact/new" %>
+				<!--</form>-->
+			</article>            
+        </section>
+		
+	</section>
+	
+	<footer>
+		Portafolio - <a rel="author" href="http://twitter.com/MayRues" target="_blank">@mayrues</a>
+	</footer>
+     
+   	
+</body>
+</html>
+

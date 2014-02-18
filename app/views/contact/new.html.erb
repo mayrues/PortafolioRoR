@@ -1,0 +1,29 @@
+
+<%= form_tag(contacts_path,:id => "formContact", :remote => true, :authenticity_token => true, method: "post") do %>
+	<fieldset>
+		<legend>&nbsp;Env&iacute;anos tus comentarios&nbsp;</legend>
+		<div>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" class="fade" name="nombre" required/>
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" id="email" class="fade" name="email" required/>
+		</div>
+		<div>
+			<label for="asunto">Asunto:</label>
+			<input type="text" id="asunto" class="fade" name="asunto" required/>
+		</div>
+		<div>
+			<label for="comentarios">Comentarios:</label>
+			<textarea id="comentarios" class="fade" name="comentarios" cols="31" rows="5" required></textarea>
+		</div>
+		<div>
+			<input type="submit" id="enviar" class="fade" name="enviar" value="Enviar"/>
+		</div>
+		<div>
+			<span id="msg"></span>
+		</div>
+
+	</fieldset>
+<%end%>
