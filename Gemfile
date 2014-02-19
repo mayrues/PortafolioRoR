@@ -7,6 +7,7 @@ gem 'rails', '4.0.0'
 #gem 'sqlite3'
 #Ponemos PostGreSQL por que en heroku no le gusta el sqlite3
 gem 'pg'
+gem 'rails_12factor'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

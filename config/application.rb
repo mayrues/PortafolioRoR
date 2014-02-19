@@ -35,5 +35,6 @@ module PortafolioRoR
       :host => "espinosamayte@gmail.com"
     }
     config.serve_static_assets = true
+    config.assets.compile = true
   end
 end
