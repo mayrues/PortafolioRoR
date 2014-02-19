@@ -13,7 +13,7 @@ article, figcaption, figure, footer, header, hgroup, nav, section {
 /*resert end*/
 
 body{
-	background: #212121 url(../assets/fondo.png);
+	background: #212121 url(fondo.png);
 	color: #FFF;
 	font-family: "Pacifico",Helvetica,Verdana;
 	font-size: 1em;
