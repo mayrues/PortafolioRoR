@@ -14,15 +14,11 @@ article, figcaption, figure, footer, header, hgroup, nav, section {
 /*resert end*/
 
 body{
-	background: #212121;
-	/*background-image: url(image-path('fondo.png'));	*/
-	/*background-image: url('<%= image_path("logo.png")%>');*/
-	/*background-image: image-url('fondo.png');*/
+	background: #212121;	
 	background-image:  image-url("fondo.png");
 	color: #FFF;
 	font-family: "Pacifico",Helvetica,Verdana;
 	font-size: 1em;
-
 }
 a{
 	color: #1E6381;
@@ -273,6 +269,9 @@ article h3{
 	}
 }
 @media(max-width: 600px){
+	header, section#contenido, section#cita, footer{
+		max-width: 100%;
+	}
 	header h1{
 		text-align: center;		
 		width: 90%;
