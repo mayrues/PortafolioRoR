@@ -1,0 +1,394 @@
+/*reset*/
+/* line 5, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+article, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/*resert end*/
+/* line 17, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+body {
+  background: #212121;
+  /*background-image: url(image-path('fondo.png'));	*/
+  /*background-image: url('<%= image_path("logo.png")%>');*/
+  /*background-image: image-url('fondo.png');*/
+  background-image: url(/assets/fondo-a63960ab881f2955293b267fe19db98f.png);
+  color: #FFF;
+  font-family: "Pacifico",Helvetica,Verdana;
+  font-size: 1em;
+}
+
+/* line 28, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+a {
+  color: #1E6381;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 33, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+a:hover {
+  color: #F60;
+}
+
+/* line 37, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+figcaption {
+  font-size: 0.85em;
+  padding: 0.25em;
+  text-align: center;
+}
+
+/* line 42, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+img, video {
+  max-width: 100%;
+}
+
+/* line 45, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+h1 span {
+  font-family: "Pacifico",Helvetica,Arial;
+  font-size: 1.5em;
+}
+
+/* line 49, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+h2 {
+  font-family: "Create Round", Helvetica, Arial;
+  color: #F90;
+}
+
+/* line 53, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+hr {
+  border: 1px dashed #fff;
+  margin: 1em 0;
+}
+
+/* line 57, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+header, section#contenido, section#cita, footer {
+  background: #FFF;
+  margin: 0 auto;
+  max-width: 90%;
+  text-align: center;
+  -ms-box-shadow: 0 2px 2px 2px #ededed;
+  -moz-box-shadow: 0 2px 2px 2px #ededed;
+  -o-box-shadow: 0 2px 2px 2px #ededed;
+  -webkit-box-shadow: 0 2px 2px 2px #ededed;
+  box-shadow: 0 2px 2px 2px #ededed;
+  margin-bottom: 0.3em;
+}
+
+/* line 69, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+header h1, nav {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* line 75, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+header, section#cita {
+  -ms-box-shadow: 0 2px 0 #F90;
+  -moz-box-shadow: 0 2px 0 #F90;
+  -o-box-shadow: 0 2px 0 #F90;
+  -webkit-box-shadow: 0 2px 0 #F90;
+  box-shadow: 0 2px 0 #F90;
+  padding-bottom: 0.5em;
+}
+
+/* line 83, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 86, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+nav li {
+  display: inline-block;
+  padding: 0.1em;
+  vertical-align: top;
+}
+
+/* line 91, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+nav a {
+  background: #fff;
+  color: #F60;
+  display: block;
+  font-family: "Create Round", Helvetica, Verdana;
+  font-size: 0.9em;
+  padding: 0.2em;
+  -ms-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+/* line 104, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+nav a:hover {
+  border-top: 0.1em solid #F60;
+  color: #57ABB8;
+  -ms-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+/* line 113, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+section#principal, aside {
+  background: #1E6381;
+  border-radius: 0.5em;
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0.25em;
+  vertical-align: top;
+  width: 65%;
+}
+
+/* line 123, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+section#cita {
+  color: #1E6381;
+  text-align: right;
+  font-family: "Pacifico", Helvetica, Arial;
+  font-size: 1em;
+  font-style: italic;
+}
+
+/* line 131, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+section#cita div {
+  padding: 0.5em;
+}
+
+/* line 134, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+aside {
+  width: 30%;
+}
+
+/* line 137, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+aside img {
+  border-radius: 0.5em;
+}
+
+/* line 141, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+footer {
+  color: #000;
+  font-size: 1em;
+  padding: 0.75em 0;
+}
+
+/* line 147, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+form div {
+  margin: .5em;
+}
+
+/* line 150, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+fieldset {
+  border: .1em solid #F60;
+  border-radius: .5em;
+  padding: 1em;
+}
+
+/* line 155, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+input[type="email"], input[type="text"], textarea {
+  background: #eee;
+  border-radius: .25em;
+  color: #F60;
+  font-size: 1em;
+  padding: .25em;
+  width: 95%;
+}
+
+/* line 163, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+input[type="email"]:focus, input[type="text"]:focus, textarea:focus {
+  background: #C6ECF9;
+}
+
+/* line 166, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+input[type="submit"] {
+  background: #F90;
+  border-radius: 0 .25em;
+  font-family: "Pacifico";
+  font-size: 1.25em;
+  padding: .25em;
+}
+
+/* line 173, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+input[type="submit"]:hover {
+  background: #7BBFD5;
+  border-radius: .25em 0;
+  color: #000;
+  cursor: pointer;
+}
+
+/* line 179, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 182, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+legend {
+  color: #1E6381;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* line 187, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+textarea {
+  resize: none;
+}
+
+/* line 191, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+article h3 {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+/* line 195, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+.parrafo {
+  color: #1E6381;
+  display: inline-block;
+  font-family: "Create Round", Helvetica, Verdana;
+  font-size: 0.9em;
+  padding: 0.3em;
+  text-align: left;
+  max-width: 100%;
+  width: 95%;
+}
+
+/* line 205, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+.parrafo article {
+  display: inline-block;
+  padding: 1em;
+  width: 40%;
+  vertical-align: top;
+}
+
+/* line 211, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+.parrafo h2 {
+  border-bottom: #CCC dashed 0.1em;
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
+/* line 215, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+.parrafo div {
+  font-weight: normal;
+  padding: 0.5em;
+}
+
+/* line 220, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+#sobre-mi article {
+  width: 90%;
+}
+
+/* line 223, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+.fade {
+  opacity: 1;
+  filter: alpha(opacity=10);
+  -ms-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+/* line 232, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+.fade:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=7);
+  -ms-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+@media (min-width: 1081px) {
+  /*De 1081 para arriba*/
+  /* line 242, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  header h1 {
+    text-align: left;
+    width: 35%;
+  }
+
+  /* line 246, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  nav {
+    text-align: right;
+    width: 60%;
+  }
+}
+@media (max-width: 1080px) {
+  /*De 1080 hacia abajo*/
+  /* line 252, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  header h1 {
+    text-align: left;
+    padding-left: 0.3em;
+    width: 40%;
+  }
+
+  /* line 257, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  nav li {
+    font-size: 1em;
+  }
+
+  /* line 260, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  aside {
+    width: 20%;
+  }
+}
+@media (max-width: 800px) {
+  /* line 265, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  header h1 {
+    text-align: left;
+    width: 40%;
+  }
+
+  /* line 269, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  nav li {
+    font-size: 0.95em;
+  }
+
+  /* line 272, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  #contacto article {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 277, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  header h1 {
+    text-align: center;
+    width: 90%;
+  }
+
+  /* line 281, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  nav a {
+    border: .1em solid #1E6381;
+    border-radius: 0 .5em;
+  }
+
+  /* line 285, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  nav a:hover {
+    border: 0.1em solid #F60;
+    color: #57ABB8;
+    -ms-transition: border  0.5s ease-out;
+    -moz-transition: border  0.5s ease-out;
+    -o-transition: border 0.5s ease-out;
+    -webkit-transition: border 0.5s ease-out;
+    transition: color 0.5s ease-out;
+  }
+
+  /* line 294, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  nav li {
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 0px;
+    width: 98%;
+  }
+
+  /* line 300, /home/mayte/Trabajo/RoR/PortafolioRoR/app/assets/stylesheets/application.css.scss */
+  .parrafo article {
+    display: block;
+    width: 90%;
+  }
+}
