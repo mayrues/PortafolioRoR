@@ -1,3 +1,8 @@
+// ...
+//= require jquery
+//= require jquery_ujs
+//= require_tree .
+
 $(window).load(function () {
     $('ul li a').click(function (e) {
         e.preventDefault();
