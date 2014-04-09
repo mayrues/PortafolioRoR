@@ -1,4 +1,4 @@
-//= require jquery-rails
+//= require jquery
 //= require turbolinks
 
 $(window).load(function () {    
@@ -9,8 +9,7 @@ $(window).load(function () {
             $('body,html').stop(true, true).animate({ scrollTop: $(strAncla).offset().top }, 1000);
         }
     });
-    $("#formContact").submit(function(){     
-        alert("Envio");
+    $("#formContact").subalert("Envio");
         var valuesToSubmit = $(this).serialize();
         var accion=$(this).attr('action');
         
@@ -20,8 +19,7 @@ $(window).load(function () {
             type: "POST",
             dataType: 'json',
             processData: false,
-            success: function (msg) {     
-                alert("Envio");           
+            success: function (msg) {                         
                 $("#msg").html("Gracias por contactar con nosotros.");
                 $('body,html').stop(true, true).animate({ scrollTop: $("#contacto").offset().top }, 1000);                
             },
