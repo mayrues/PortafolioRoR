@@ -9,7 +9,8 @@ $(window).load(function () {
             $('body,html').stop(true, true).animate({ scrollTop: $(strAncla).offset().top }, 1000);
         }
     });
-    $("#formContact").subalert("Envio");
+    $("#formContact").submit(function(){     
+        
         var valuesToSubmit = $(this).serialize();
         var accion=$(this).attr('action');
         
@@ -19,9 +20,11 @@ $(window).load(function () {
             type: "POST",
             dataType: 'json',
             processData: false,
-            success: function (msg) {                         
+            success: function (msg) {                            
                 $("#msg").html("Gracias por contactar con nosotros.");
-                $('body,html').stop(true, true).animate({ scrollTop: $("#contacto").offset().top }, 1000);                
+                $('body,html')
+                        .stop(true, true)
+                        .animate({ scrollTop: $("#contacto").offset().top }, 1000);                
             },
             error: function (xhr, status) {
                 alert("Error " + xhr.error);
