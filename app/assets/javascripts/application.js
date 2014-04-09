@@ -1,7 +1,5 @@
-//= require jquery
-//= require jquery_ujs
+//= require jquery-rails
 //= require turbolinks
-//= require_tree .
 
 $(window).load(function () {
     $('ul li a').click(function (e) {

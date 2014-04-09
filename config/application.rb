@@ -45,6 +45,7 @@ module PortafolioRoR
     
     # Do not fallback to assets pipeline if a precompiled asset is missed.
     config.assets.compile = true
+    config.assets.compress = true
 
     # Generate digests for assets URLs.
     config.assets.digest = true
@@ -53,9 +54,6 @@ module PortafolioRoR
     config.assets.version = '1.0'
     #config.assets.precompile += %w( application.css)
     config.assets.precompile += %w( *.css *.js )
-
-
-
 
   end
 end
